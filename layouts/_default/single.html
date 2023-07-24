@@ -2,6 +2,10 @@
 
 <article>
   <header class="mb-16">
+    {{ if .Params.TitleImage }}
+    <img src="{{ .Params.TitleImage }}" width="300px"/>
+    {{ end }}
+
     <h1 class="!my-0 pb-2.5">{{ .Title }}</h1>
 
     {{ if ne .Type "page" }}
